@@ -1,0 +1,129 @@
+:root {
+  --success: #18af4a;
+  --warning: #e69824;
+  --danger: #e53b3b;
+  --main-bg-color: #fffdfd; 
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  border: 5px solid #e6e4e4;
+  width: 60%;
+  height: 30em;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  border-radius: 15px;
+}
+
+/* Outer and Inner Wheels */
+.outer_wheel {
+  position: relative;
+  text-align: center;
+  background-color: #f0efef;
+  border-radius: 50%;
+  height: 320px;
+  width: 320px;
+}
+
+.inner_wheel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0px 0px -150px;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.success {
+  background-color: var(--success);
+  background-image: linear-gradient(210deg, transparent 50%, #f0f0f0 50%),
+    linear-gradient(90deg, #f0f0f0 50%, transparent 50%);
+}
+
+.warning {
+  background-color: var(--warning);
+  background-image: linear-gradient(30deg, transparent 50%, #f0f0f0 50%),
+    linear-gradient(150deg, #f0f0f0 50%, transparent 50%);
+}
+
+.danger {
+  background-color: var(--danger);
+  background-image: linear-gradient(150deg, transparent 50%, #f0f0f0 50%),
+    linear-gradient(270deg, #f0f0f0 50%, transparent 50%);
+}
+
+.tracker{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -22px;
+  margin-left: -15px;
+  z-index: 10;
+  
+}
+
+/* Face */
+.face{
+  position: relative;
+  top: 33%;
+  left: 35%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.smile {
+  background-color: var(--success);
+}
+
+.neutral {
+  background-color: var(--warning);
+}
+
+.sad {
+  background-color: var(--danger);
+}
+
+.eye{
+  position: relative;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: var(--main-bg-color);
+  display: inline-block;
+}
+.leftEye {
+  margin: 30px 20px 0 0;
+}
+
+/* Mouth  */
+.mouth{
+  width: 50px;
+  height: 15px;
+  margin: 5px 0 0 25px;
+  border-bottom: 5px solid var(--main-bg-color)
+}
+
+.happy {
+  border-radius: 50%;
+}
+
+.frown{
+  border-top: 5px solid var(--main-bg-color);
+  border-bottom: none;
+  border-radius: 50%;
+  margin: 10px 0 0 25px !important;
+}
